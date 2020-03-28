@@ -3,5 +3,7 @@ services:
   app:
     build: .
     tty: true
+    ports:
+      - "1323:1323"
     volumes:
       - ./backend:/go/src/app
